@@ -22,7 +22,7 @@ export default function Home() {
             今すぐ電話
           </a>
           <a
-            href="#"
+            href="hide0821002"
             className="border border-white px-6 py-3 rounded-xl"
           >
             LINE相談
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="border p-6 rounded-xl">
             <h3 className="font-bold">アメ車対応OK</h3>
             <p className="mt-2 text-sm">
-              国産車はもちろん、アメ車の対応も可能です。
+              国産車はもちろん、アメ車、輸入車の対応も可能です。
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
           <div className="border p-6 rounded-xl">
             <h3 className="font-bold">事業用軽車両販売</h3>
             <p className="text-sm mt-2">
-              軽幌・軽バン・軽トラック・冷蔵車など。
+              軽幌・軽バン・軽トラック・軽クール車など。
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
 
         <div className="mt-6">
           <a
-            href="tel:0000000000"
+            href="tel:092-284-9392"
             className="bg-white text-black px-6 py-3 rounded-xl font-bold"
           >
             電話する
