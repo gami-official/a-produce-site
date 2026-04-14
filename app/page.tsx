@@ -23,25 +23,18 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <a
-            href="tel:0922925881"
-            className="bg-white text-black px-6 py-3 rounded-xl font-bold"
-          >
-            📞 今すぐ電話（24時間対応）
-          </a>
+  <a href="tel:0922925881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
+    📞 今すぐ電話（24時間対応）
+  </a>
 
-          <a
-            href="https://line.me/R/ti/p/%40394fvejx"
-            className="border border-white px-6 py-3 rounded-xl"
-          >
-            LINEで相談<a
-  href="/price"
-  className="border border-white px-6 py-3 rounded-xl"
->
-  料金を見る
-</a>
-          </a>
-        </div>
+  <a href="https://line.me/R/ti/p/%40394fvejx" className="border border-white px-6 py-3 rounded-xl">
+    LINEで相談
+  </a>
+
+  <a href="/price" className="border border-white px-6 py-3 rounded-xl">
+    料金を見る
+  </a>
+</div>
       </section>
 
       {/* 安心訴求 */}
