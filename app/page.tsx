@@ -30,6 +30,11 @@ export default function Home() {
   <a href="https://line.me/R/ti/p/%40394fvejx" className="border border-white px-6 py-3 rounded-xl">
     LINEで相談
   </a>
+
+          <a href="/car" className="border border-white px-6 py-3 rounded-xl">
+  中古車を見る
+</a>
+          
           <a href="/delivery" className="border border-white px-6 py-3 rounded-xl">
   軽運送を見る
 </a>
