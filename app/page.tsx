@@ -92,6 +92,12 @@ export default function Home() {
       {/* サービス */}
       <section className="py-16 px-6">
         <h2 className="text-2xl font-bold text-center">その他サービス</h2>
+        <a
+  href="/works"
+  className="border border-white px-6 py-3 rounded-xl"
+>
+  実績を見る
+</a>
 
         <div className="grid md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
 
