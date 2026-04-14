@@ -6,11 +6,12 @@ export default function Home() {
       <section className="text-center py-24 px-4">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
           福岡エリア対応｜24時間365日<br />
-          事故車・故障車レッカー
+          福岡 レッカー｜事故車・故障車引き取り
         </h1>
 
         <p className="mt-6 text-gray-300">
-          最短30分で現場到着｜夜間・緊急対応OK<br />
+          福岡で事故車・故障車のレッカーならお任せください
+最短30分で現場到着・24時間365日対応<br />
           アメ車・輸入車も対応可能
         </p>
 
@@ -55,7 +56,9 @@ export default function Home() {
           <p>✔ 迅速・丁寧対応</p>
         </div>
       </section>
-
+<h2 className="text-2xl font-bold text-center mt-10">
+福岡でレッカーをお探しの方へ
+</h2>
       {/* 対応内容 */}
       <section className="py-16 px-6 text-center">
         <h2 className="text-2xl font-bold">対応内容</h2>
