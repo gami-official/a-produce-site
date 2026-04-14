@@ -19,11 +19,11 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <a href="tel:あなたの電話番号" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
+          <a href="tel:092-292-5881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
             今すぐ電話（24時間対応）
           </a>
 
-          <a href="あなたのLINEリンク" className="border border-white px-6 py-3 rounded-xl">
+          <a href="@394fvejx" className="border border-white px-6 py-3 rounded-xl">
             LINEで相談
           </a>
         </div>
@@ -118,7 +118,7 @@ export default function Home() {
         </h2>
 
         <div className="mt-6">
-          <a href="tel:あなたの電話番号" className="bg-black text-white px-6 py-3 rounded-xl font-bold">
+          <a href="tel:092-292-5881" className="bg-black text-white px-6 py-3 rounded-xl font-bold">
             今すぐ電話する
           </a>
         </div>
