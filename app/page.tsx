@@ -14,16 +14,26 @@ export default function Home() {
           アメ車・輸入車も対応可能
         </p>
 
+        <p className="mt-2 text-red-400 font-bold">
+          緊急対応OK｜今すぐお電話ください
+        </p>
+
         <p className="mt-2 text-gray-400">
           年間対応実績1000件以上
         </p>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <a href="tel:092-292-5881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
-            今すぐ電話（24時間対応）
+          <a
+            href="tel:0922925881"
+            className="bg-white text-black px-6 py-3 rounded-xl font-bold"
+          >
+            📞 今すぐ電話（24時間対応）
           </a>
 
-          <a href="@394fvejx" className="border border-white px-6 py-3 rounded-xl">
+          <a
+            href="https://line.me/R/ti/p/%40394fvejx"
+            className="border border-white px-6 py-3 rounded-xl"
+          >
             LINEで相談
           </a>
         </div>
@@ -111,18 +121,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA（中） */}
+      <section className="text-center py-16">
+        <a
+          href="tel:0922925881"
+          className="bg-white text-black px-6 py-3 rounded-xl font-bold"
+        >
+          📞 今すぐ電話（24時間対応）
+        </a>
+      </section>
+
+      {/* CTA（下） */}
       <section className="bg-white text-black text-center py-16">
         <h2 className="text-xl font-bold">
           事故・故障など緊急時はすぐご連絡ください
         </h2>
 
         <div className="mt-6">
-          <a href="tel:092-292-5881" className="bg-black text-white px-6 py-3 rounded-xl font-bold">
+          <a
+            href="tel:0922925881"
+            className="bg-black text-white px-6 py-3 rounded-xl font-bold"
+          >
             今すぐ電話する
           </a>
         </div>
       </section>
+
+      {/* 固定電話ボタン */}
+      <div className="fixed bottom-0 left-0 w-full bg-black p-4 flex justify-center">
+        <a
+          href="tel:0922925881"
+          className="bg-white text-black px-6 py-3 rounded-xl font-bold w-full text-center"
+        >
+          📞 今すぐ電話（24時間対応）
+        </a>
+      </div>
 
     </main>
   );
