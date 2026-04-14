@@ -3,174 +3,115 @@ export default function Home() {
     <main className="bg-black text-white min-h-screen">
 
       {/* ファーストビュー */}
-      <section className="text-center py-24 px-4">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-          福岡エリア対応｜24時間365日<br />
-          福岡 レッカー｜事故車・故障車引き取り
-        </h1>
+      <section className="relative text-center py-32 px-4">
+        <img
+          src="/hero.jpg"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
 
-        <p className="mt-6 text-gray-300">
-          福岡で事故車・故障車のレッカーならお任せください
-最短30分で現場到着・24時間365日対応<br />
-          アメ車・輸入車も対応可能
+        <div className="relative z-10">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            福岡｜アメ車・輸入車に強い中古車販売<br />
+            レッカー・軽運送・物流まで対応
+          </h1>
+
+          <p className="mt-6 text-gray-300">
+            年間対応実績1000件以上｜24時間365日対応<br />
+            緊急時も即対応可能
+          </p>
+
+          <div className="mt-8 flex justify-center gap-4 flex-wrap">
+            <a href="tel:092-292-5881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
+              今すぐ電話
+            </a>
+
+            <a href="@394fvejx" className="border border-white px-6 py-3 rounded-xl">
+              LINE相談
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 中古車販売 */}
+      <section className="py-20 px-6">
+        <h2 className="text-3xl font-bold text-center">
+          アメ車・輸入車に強い中古車販売
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10 max-w-6xl mx-auto">
+          <img src="/car1.jpg" className="rounded-xl" />
+          <img src="/car2.jpg" className="rounded-xl" />
+        </div>
+
+        <p className="text-center mt-6 text-gray-300">
+          アメ車・輸入車を中心に厳選車両を販売。<br />
+          カスタム・整備・アフターサポートまで一貫対応。
         </p>
+      </section>
 
-        <p className="mt-2 text-red-400 font-bold">
-          緊急対応OK｜今すぐお電話ください
+      {/* レッカー */}
+      <section className="bg-white text-black py-20 px-6">
+        <h2 className="text-3xl font-bold text-center">
+          事故車・故障車 レッカー引き取り
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10 max-w-6xl mx-auto">
+          <img src="/tow.jpg" className="rounded-xl" />
+          <img src="/garage.jpg" className="rounded-xl" />
+        </div>
+
+        <p className="text-center mt-6">
+          24時間365日対応｜最短30分到着<br />
+          夜間・緊急・アメ車対応OK
         </p>
+      </section>
 
-        <p className="mt-2 text-gray-400">
-          年間対応実績1000件以上
+      {/* 軽運送 */}
+      <section className="py-20 px-6">
+        <h2 className="text-3xl font-bold text-center">
+          軽運送ビジネス支援
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10 max-w-6xl mx-auto">
+          <img src="/kei1.jpg" className="rounded-xl" />
+          <img src="/kei2.jpg" className="rounded-xl" />
+        </div>
+
+        <p className="text-center mt-6 text-gray-300">
+          黒ナンバー取得・代車貸出・案件紹介までサポート。<br />
+          未経験からでもスタート可能。
         </p>
-
-        <div className="mt-8 flex justify-center gap-4 flex-wrap">
-  <a href="tel:0922925881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
-    📞 今すぐ電話（24時間対応）
-  </a>
-
-  <a href="https://line.me/R/ti/p/%40394fvejx" className="border border-white px-6 py-3 rounded-xl">
-    LINEで相談
-  </a>
-
-          <a href="/car" className="border border-white px-6 py-3 rounded-xl">
-  中古車を見る
-</a>
-          
-          <a href="/delivery" className="border border-white px-6 py-3 rounded-xl">
-  軽運送を見る
-</a>
-
-  <a href="/price" className="border border-white px-6 py-3 rounded-xl">
-    料金を見る
-  </a>
-</div>
       </section>
 
-      {/* 安心訴求 */}
-      <section className="bg-white text-black py-16 px-6 text-center">
-        <h2 className="text-2xl font-bold">安心してご依頼いただけます</h2>
+      {/* 物流（ここ強化🔥） */}
+      <section className="bg-white text-black py-20 px-6">
+        <h2 className="text-3xl font-bold text-center">
+          法人向け物流サービス
+        </h2>
 
-        <div className="mt-10 space-y-3">
-          <p>✔ 明確な料金説明</p>
-          <p>✔ 無理な営業なし</p>
-          <p>✔ 迅速・丁寧対応</p>
+        <div className="max-w-6xl mx-auto mt-10">
+          <img src="/logistics.jpg" className="rounded-xl w-full" />
         </div>
-      </section>
-<h2 className="text-2xl font-bold text-center mt-10">
-福岡でレッカーをお探しの方へ
-</h2>
-      {/* 対応内容 */}
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-2xl font-bold">対応内容</h2>
 
-        <div className="mt-10 space-y-3">
-          <p>・事故車のレッカー引き取り</p>
-          <p>・故障車の搬送</p>
-          <p>・バッテリー上がり</p>
-          <p>・エンジントラブル</p>
-          <p>・動かない車の引き取り</p>
+        <div className="text-center mt-6 space-y-2">
+          <p>企業配送・スポット・定期便対応</p>
+          <p>倉庫保管・仕分け・出荷まで一括対応</p>
+          <p>株式会社GAMIと連携した安定物流</p>
         </div>
       </section>
 
-      {/* 強み */}
-      <section className="bg-white text-black py-16 px-6">
-        <h2 className="text-2xl font-bold text-center">当社の強み</h2>
-
-        <div className="grid md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">24時間365日対応</h3>
-            <p className="mt-2 text-sm">
-              深夜・早朝でもすぐ対応可能
-            </p>
-          </div>
-
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">アメ車対応</h3>
-            <p className="mt-2 text-sm">
-              輸入車・アメ車も対応可能
-            </p>
-          </div>
-
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">スピード対応</h3>
-            <p className="mt-2 text-sm">
-              最短30分で現場到着
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* サービス */}
-      <section className="py-16 px-6">
-        <h2 className="text-2xl font-bold text-center">その他サービス</h2>
-        <a
-  href="/works"
-  className="border border-white px-6 py-3 rounded-xl"
->
-  実績を見る
-</a>
-
-        <div className="grid md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
-
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">中古車販売</h3>
-            <p className="text-sm mt-2">
-              アメ車・輸入車に強い販売対応
-            </p>
-          </div>
-
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">軽運送事業</h3>
-            <p className="text-sm mt-2">
-              委託・請負どちらも対応可能
-            </p>
-          </div>
-
-          <div className="border p-6 rounded-xl">
-            <h3 className="font-bold">黒ナンバー支援</h3>
-            <p className="text-sm mt-2">
-              取得・代車・コンサル対応
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* CTA（中） */}
-      <section className="text-center py-16">
-        <a
-          href="tel:0922925881"
-          className="bg-white text-black px-6 py-3 rounded-xl font-bold"
-        >
-          📞 今すぐ電話（24時間対応）
-        </a>
-      </section>
-
-      {/* CTA（下） */}
-      <section className="bg-white text-black text-center py-16">
-        <h2 className="text-xl font-bold">
-          事故・故障など緊急時はすぐご連絡ください
+      {/* CTA */}
+      <section className="text-center py-20">
+        <h2 className="text-2xl font-bold">
+          お仕事のご依頼・ご相談はお気軽に
         </h2>
 
         <div className="mt-6">
-          <a
-            href="tel:0922925881"
-            className="bg-black text-white px-6 py-3 rounded-xl font-bold"
-          >
+          <a href="tel:092-292-5881" className="bg-white text-black px-6 py-3 rounded-xl font-bold">
             今すぐ電話する
           </a>
         </div>
       </section>
-
-      {/* 固定電話ボタン */}
-      <div className="fixed bottom-0 left-0 w-full bg-black p-4 flex justify-center">
-        <a
-          href="tel:0922925881"
-          className="bg-white text-black px-6 py-3 rounded-xl font-bold w-full text-center"
-        >
-          📞 今すぐ電話（24時間対応）
-        </a>
-      </div>
 
     </main>
   );
