@@ -34,7 +34,12 @@ export default function Home() {
             href="https://line.me/R/ti/p/%40394fvejx"
             className="border border-white px-6 py-3 rounded-xl"
           >
-            LINEで相談
+            LINEで相談<a
+  href="/price"
+  className="border border-white px-6 py-3 rounded-xl"
+>
+  料金を見る
+</a>
           </a>
         </div>
       </section>
