@@ -156,7 +156,41 @@ export default function Home() {
           </a>
         </div>
       </section>
+<section className="py-20 px-6 text-center border-t border-white/10">
+  <h2 className="text-2xl font-bold">関連事業</h2>
 
+  <div className="mt-6 space-y-4">
+    <div>
+      <p className="font-bold">ヘッドスパ専門店ゆう</p>
+      <p className="text-gray-400 text-sm">
+        完全個室・1日3名限定のヘッドスパ専門店
+      </p>
+      <a
+        href="https://www.yuheadspa.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline"
+      >
+        サロン詳細はこちら
+      </a>
+    </div>
+
+    <div>
+      <p className="font-bold">株式会社GAMI</p>
+      <p className="text-gray-400 text-sm">
+        物流・倉庫・法人配送を展開
+      </p>
+      <a
+        href="https://www.gamigami.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline"
+      >
+        GAMIサイトはこちら
+      </a>
+    </div>
+  </div>
+</section>
       {/* フッター */}
       <footer className="text-center py-10 text-gray-400 border-t border-white/10">
         <p>A-PRODUCE株式会社</p>
