@@ -39,18 +39,38 @@ export default function Home() {
 
       {/* 車事業 */}
       <section className="py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold">
-          Styling★Garage（車事業）
-        </h2>
-        <div className="mt-6 text-center">
+   <h2 className="text-3xl font-bold">
+  Styling★Garage（車事業）
+</h2>
+
+<p className="text-gray-400 mt-2 text-center">
+  A-PRODUCE株式会社
+</p>
+
+<p className="text-center text-gray-300 mt-4">
+  在庫車両はカーセンサーに掲載しています
+</p>
+
+<div className="mt-6 flex justify-center gap-4 flex-wrap">
+
   <a
     href="https://www.carsensor.net/shop/fukuoka/315192001/stocklist/"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-block bg-white text-black px-6 py-3 rounded-xl font-bold hover:opacity-90 transition"
+    className="bg-white text-black px-6 py-3 rounded-xl font-bold"
   >
-    在庫車両はこちら（カーセンサー）
+    在庫を見る（カーセンサー）
   </a>
+
+  <a
+    href="https://line.me/R/ti/p/@394fvejx"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border border-white px-6 py-3 rounded-xl font-bold"
+  >
+    車の相談をする（LINE）
+  </a>
+
 </div>
         <p className="text-gray-400 mt-2">A-PRODUCE株式会社</p>
 
