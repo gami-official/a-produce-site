@@ -99,6 +99,11 @@ export default function Home() {
         </div>
 
         <p className="mt-6">事故・故障・緊急対応OK｜24時間対応</p>
+        <div className="mt-6">
+  <a href="/wrecker" className="underline text-sm text-gray-300">
+    レッカー対応の詳細はこちら
+  </a>
+</div>
       </section>
 
       {/* 軽運送 */}
@@ -115,6 +120,11 @@ export default function Home() {
           <br />
           個人・法人問わずご相談ください。
         </p>
+        <div className="mt-6">
+  <a href="/delivery" className="underline text-sm text-gray-300">
+    軽運送サービスの詳細はこちら
+  </a>
+</div>
       </section>
 
       {/* 物流 */}
@@ -141,6 +151,15 @@ export default function Home() {
         >
           物流の詳細を見る
         </a>
+        <p className="text-center text-sm text-gray-400 mt-4">
+  詳しい車両情報・販売内容はこちら
+</p>
+
+<div className="mt-4">
+  <a href="/car" className="underline text-sm text-gray-300">
+    輸入車・中古車販売ページを見る
+  </a>
+</div>
       </section>
 
       {/* CTA */}
