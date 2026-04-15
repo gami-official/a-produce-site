@@ -144,7 +144,9 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+<a href="/company" className="underline">
+  会社概要はこちら
+</a>
     </main>
   );
 }
