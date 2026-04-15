@@ -42,6 +42,16 @@ export default function Home() {
         <h2 className="text-3xl font-bold">
           Styling★Garage（車事業）
         </h2>
+        <div className="mt-6 text-center">
+  <a
+    href="https://www.carsensor.net/shop/fukuoka/315192001/stocklist/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-white text-black px-6 py-3 rounded-xl font-bold hover:opacity-90 transition"
+  >
+    在庫車両はこちら（カーセンサー）
+  </a>
+</div>
         <p className="text-gray-400 mt-2">A-PRODUCE株式会社</p>
 
         <div className="grid md:grid-cols-2 gap-6 mt-10 max-w-6xl mx-auto">
