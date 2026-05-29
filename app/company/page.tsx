@@ -19,8 +19,7 @@ export default function Company() {
           <p><strong>WEB：</strong>https://www.a-produce.net/</p>
           <p><strong>設立：</strong>2015年11月（創業） / 2020年 法人設立</p>
           <p><strong>資本金：</strong>300万円</p>
-          <p><strong>代表取締役：</strong>有隅 秀秋 / 淵上 和博</p>
-          <p><strong>取締役：</strong>有隅 靖代</p>
+          <p><strong>代表取締役：</strong>有隅 秀秋</p>
         </div>
 
         {/* モットー */}
