@@ -37,11 +37,11 @@ const services = [
     title: "物流事業",
     subtitle: "倉庫保管・梱包・発送代行",
     description:
-      "商品の入庫・保管・ピッキング・梱包・出荷まで。小ロットから継続案件まで、企業の物流課題をご相談いただけます。",
+      "商品の入庫・保管・ピッキング・梱包・出荷まで。物流業務は専門パートナーの株式会社GAMIと連携し、小ロットから継続案件まで幅広いご相談に対応します。",
     image: "/logistics.jpg",
-    href: "/logistics",
-    action: "物流サービスを見る",
-    external: false,
+    href: GAMI,
+    action: "物流・発送代行はGAMIへ相談",
+    external: true,
   },
   {
     number: "04",
@@ -49,11 +49,11 @@ const services = [
     title: "内職・検品事業",
     subtitle: "検品・仕分け・セット組み・封入",
     description:
-      "商品の目視検品、数量確認、仕分け、ラベル貼り、セット組み、封入・梱包など、手間のかかる作業をまとめてご相談ください。",
+      "商品の目視検品、数量確認、仕分け、ラベル貼り、セット組み、封入・梱包など。専門パートナーの株式会社GAMIと連携し、作業から発送までまとめてご相談いただけます。",
     image: "/logistics.jpg",
-    href: "#contact",
-    action: "作業代行の見積を相談",
-    external: false,
+    href: GAMI,
+    action: "検品・セット組みはGAMIへ相談",
+    external: true,
   },
 ];
 
@@ -68,7 +68,11 @@ const faqs = [
   },
   {
     q: "検品や内職だけでも依頼できますか？",
-    a: "はい。検品・仕分け・セット組み・封入など、個別の作業についてもご相談を承ります。数量や納期をもとにお見積もりします。",
+    a: "はい。検品・仕分け・セット組み・封入など、個別の作業についてもご相談いただけます。専門パートナーの株式会社GAMIが、数量や納期に応じて対応をご案内します。",
+  },
+  {
+    q: "倉庫保管や発送代行はどこに相談すればよいですか？",
+    a: "倉庫保管・在庫管理・ピッキング・梱包・発送代行などの物流業務は、専門パートナーの株式会社GAMIへお問い合わせください。小ロットから継続的な物流業務までご相談いただけます。",
   },
   {
     q: "中古車の購入や買取はどこに相談すればよいですか？",
@@ -88,6 +92,25 @@ function MailButton({
   return (
     <a
       href={`mailto:${EMAIL}?subject=${encodeURIComponent(subject)}`}
+      className={`ap-btn ap-btn-gold ${className}`}
+    >
+      {children}
+    </a>
+  );
+}
+
+function GamiButton({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <a
+      href={GAMI}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`ap-btn ap-btn-gold ${className}`}
     >
       {children}
@@ -197,15 +220,16 @@ export default function Home() {
         <div className="ap-container">
           <p className="ap-eyebrow">OUR BUSINESS</p>
           <h2>
-            ひとつの会社で、
+            幅広いニーズに、
             <br />
-            幅広いニーズに対応。
+            専門サービスで対応。
           </h2>
           <p>
             A-produce株式会社は、自動車事業をはじめ、
             運送・物流・作業代行を展開しています。
+            物流分野では専門パートナーとも連携し、
             個人のお客様から法人のお客様まで、
-            まずはお気軽にご相談ください。
+            幅広いご相談に対応しています。
           </p>
         </div>
       </section>
@@ -303,7 +327,7 @@ export default function Home() {
           <h2>法人のお客様へ</h2>
           <p>
             配送業務や物流作業の外注先をお探しの企業様へ。
-            ご依頼内容に合わせてお見積もりします。
+            それぞれの専門窓口をご案内します。
           </p>
         </div>
 
@@ -333,9 +357,13 @@ export default function Home() {
               <li>在庫管理・出荷業務</li>
               <li>継続的な物流業務の委託</li>
             </ul>
-            <MailButton subject="【A-produce】物流・発送代行の見積相談">
-              物流の見積を依頼する →
-            </MailButton>
+            <p>
+              物流業務は専門パートナーの株式会社GAMIへ。
+              保管から発送まで一括してご相談いただけます。
+            </p>
+            <GamiButton>
+              GAMIへ物流の見積を相談する →
+            </GamiButton>
           </article>
 
           <article>
@@ -348,9 +376,13 @@ export default function Home() {
               <li>シール・ラベル貼り</li>
               <li>大量作業・継続作業の相談</li>
             </ul>
-            <MailButton subject="【A-produce】内職・検品の見積相談">
-              作業代行の見積を依頼する →
-            </MailButton>
+            <p>
+              検品・セット組み・流通加工などの作業も、
+              株式会社GAMIへご相談いただけます。
+            </p>
+            <GamiButton>
+              GAMIへ作業代行を相談する →
+            </GamiButton>
           </article>
         </div>
       </section>
@@ -388,6 +420,11 @@ export default function Home() {
             <p>{faq.a}</p>
           </details>
         ))}
+        <div className="ap-feature-actions">
+          <GamiButton>
+            物流・検品・発送代行はGAMIへ →
+          </GamiButton>
+        </div>
       </section>
 
       <section className="ap-contact" id="contact">
@@ -399,17 +436,22 @@ export default function Home() {
             お気軽に。
           </h2>
           <p>
-            自動車・運送・物流・内職・検品など、
-            ご依頼内容が決まっていない段階でもご相談いただけます。
+            自動車・運送・レッカーに関するご相談は
+            A-PRODUCEへお問い合わせください。
+            倉庫保管・物流・発送代行・内職・検品については、
+            専門パートナーの株式会社GAMIをご案内しています。
           </p>
 
           <div className="ap-contact-actions">
             <MailButton subject="【A-produce】お問い合わせ・見積依頼">
-              メールで無料見積を依頼
+              A-PRODUCEへ無料見積を依頼
             </MailButton>
             <a href="tel:0922925881" className="ap-btn ap-btn-outline">
               福岡本店に電話
             </a>
+            <GamiButton>
+              物流・発送代行はGAMIへ →
+            </GamiButton>
           </div>
 
           <div className="ap-office-grid">
@@ -445,11 +487,19 @@ export default function Home() {
             <Link href="/delivery">運送事業</Link>
             <Link href="/logistics">物流事業</Link>
             <Link href="/wrecker">レッカー</Link>
-            <a href={GARAGE} target="_blank" rel="noopener noreferrer">
+            <a
+              href={GARAGE}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Styling★Garage
             </a>
-            <a href={GAMI} target="_blank" rel="noopener noreferrer">
-              株式会社GAMI
+            <a
+              href={GAMI}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              物流・発送代行｜株式会社GAMI
             </a>
           </nav>
           <p className="ap-copyright">
@@ -462,10 +512,20 @@ export default function Home() {
         <a href="tel:0922925881" className="ap-fixed-phone">
           <span>電話</span>
         </a>
-        <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("【A-produce】無料見積相談")}`} className="ap-fixed-mail">
+        <a
+          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
+            "【A-produce】無料見積相談"
+          )}`}
+          className="ap-fixed-mail"
+        >
           <span>無料見積</span>
         </a>
-        <a href={GARAGE} target="_blank" rel="noopener noreferrer" className="ap-fixed-car">
+        <a
+          href={GARAGE}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ap-fixed-car"
+        >
           <span>車の相談</span>
         </a>
       </div>
