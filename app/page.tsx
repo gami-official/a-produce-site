@@ -50,7 +50,7 @@ const services = [
     subtitle: "検品・仕分け・セット組み・封入",
     description:
       "商品の目視検品、数量確認、仕分け、ラベル貼り、セット組み、封入・梱包など、手間のかかる作業をまとめてご相談ください。",
-    image: "/work-main.webp",
+    image: "/logistics.jpg",
     href: "#contact",
     action: "作業代行の見積を相談",
     external: false,
